@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module2LabB.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Label FontSize="36"
+                   HorizontalOptions="Center"
+                   SemanticProperties.HeadingLevel="Level1"
+                   Text="How many years until I can legally buy alcohol?" />
+
+            <Label HorizontalOptions="Center" 
+                   Margin="3" FontSize="16" 
+                   Text="Enter your birthday" />
+            <DatePicker x:Name="mDatePicker" 
+                        HorizontalOptions="Center" 
+                        Date="2005-01-01" 
+                        DateSelected="Calculate_Years" />
+            <Label x:Name="YearsUntilLegal" 
+                   HorizontalOptions="Center" 
+                   Margin="3" 
+                   FontSize="16" 
+                   Text="" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
